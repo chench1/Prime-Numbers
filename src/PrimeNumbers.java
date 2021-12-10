@@ -11,7 +11,7 @@ public class PrimeNumbers {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("This program will list the prime numbers up to the integer that the user will enter. To exit this program " +
-                "please enter N or n anytime. \nWhen entering integers please enter an integer greater than 2. Please enter an integer. ");
+                "please enter N or n anytime. \nWhen entering integers please enter an integer greater than 2. Please enter an integer: ");
         String input = "";
         while(true) {
             int max = 0;
