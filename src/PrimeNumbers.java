@@ -11,7 +11,7 @@ public class PrimeNumbers {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("This program will list the prime numbers up to the integer that the user will enter. To exit this program " +
-                "please enter N or n anytime");
+                "please enter N or n anytime. \nWhen entering integers please enter an integer greater than 2. Please enter an integer. ");
         String input = "";
         while(true) {
             int max = 0;
@@ -19,7 +19,7 @@ public class PrimeNumbers {
                 input = scan.nextLine();
                 if (input.equalsIgnoreCase("n")) {
                     System.out.println("This program is exiting");
-                    break;
+                    return;
                 }
                 try {
                     max = Integer.parseInt(input);
@@ -40,7 +40,8 @@ public class PrimeNumbers {
                 }
             }
             if (!input.equalsIgnoreCase("n")) {
-                System.out.println("The prime numbers from 1 to " + max + " are: " + res);
+                System.out.println("The prime numbers from 1 to " + max + ": " + res);
+                System.out.println("If you would like to continue, enter another integer, else, enter n or N");
             }
         }
     }
